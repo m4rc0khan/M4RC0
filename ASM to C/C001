@@ -1,0 +1,41 @@
+C300_001
+
+
+C001_소스코드
+
+![007](https://user-images.githubusercontent.com/38207169/40464299-6b5453f8-5f55-11e8-8834-f374e8398df4.png)
+ 
+IDA - Layout Graph
+
+![001](https://user-images.githubusercontent.com/38207169/40464313-836bbc38-5f55-11e8-856c-2f984e2bae64.png)
+
+IDA - Text View
+
+![002](https://user-images.githubusercontent.com/38207169/40464327-917420ea-5f55-11e8-8683-f6b9a6e2fbb3.png)
+
+pseudo code (의사코드)
+
+![010](https://user-images.githubusercontent.com/38207169/40464356-bf73c54a-5f55-11e8-832c-6096a9cce885.png)
+
+
+IDA에서 Text View 혹은 Layout Graph에서 마우스를 올리면 정보를 볼 수 있고
+
+Ctrl+마우스 휠을 누르면 바이너리 데이터를 추가로 볼 수 있다.
+
+
+![004](https://user-images.githubusercontent.com/38207169/40464386-ebb2da56-5f55-11e8-923c-697319d02f75.png)
+
+
+String이 저장되어 있는 _Format을 더블 클릭하면 위와 같은 화면이 나오고 드래그 하면 String을 볼 수 있다.
+
+자세히 살펴보면 _Format은 char type이고 data segment에 존재하니 문자열(String)임을 추측 가능하다. 
+
+또한 문자열의 마지막 문자는 NULL로 끝나는데 db 0이기 때문에 null이다.
+
+db = data segment - byte
+
+
+
+pseudo code(최종의사 코드)
+
+![009](https://user-images.githubusercontent.com/38207169/40464401-00ff4318-5f56-11e8-897f-3f3a69198f54.png)
